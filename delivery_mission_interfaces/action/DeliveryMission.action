@@ -1,0 +1,13 @@
+float32 speed
+float32 pickup_dur
+float32 delivery_dur
+float32 timeout
+---
+bool success
+string message
+---
+float32 elapsed_time_pick
+float32 remaining_time_pick
+string message_picked
+float32 elapsed_time_deliv
+float32 remaining_time_deliv
