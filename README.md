@@ -25,8 +25,7 @@ https://github.com/user-attachments/assets/c9beddb1-0e6b-4f87-9267-cbb3af3c71cb
 | `ros2 pkg executables delivery_mission_controller` | Lists all runnable executables (nodes) inside the `delivery_mission_controller` package. |
 | `ros2 run delivery_mission_controller delivery_mission_server` | Runs the delivery_mission_node to start the delivery simulation action server and keep it on standby for a client request. Upon client request, this node will be sending `Twist` messages to `/cmd_vel` topic|
 | `ros2 run delivery_mission_controller delivery_mission_client --speed 0.2 --pickup_dur 5 --delivery_dur 5 --timeout 20` | Sends the delivery simulation action client request to the initalized server in step 8|
-| `ros2 action send_goal /delivery_mission delivery_mission_interfaces/action/DeliveryMission "{speed: 0.2, pickup_dur: 5, delivery_dur: 5.0, timeout: 20.0}" --feedback
-` | Another method that sends the delivery simulation action client request to the initalized server in step 8. However, it doesn't stop with keyboard interrupts such as ctrl+c|
+| `ros2 action send_goal /delivery_mission delivery_mission_interfaces/action/DeliveryMission "{speed: 0.2, pickup_dur: 5, delivery_dur: 5.0, timeout: 20.0}" --feedback` | Another method that sends the delivery simulation action client request to the initalized server in step 8. However, it doesn't stop with keyboard interrupts such as ctrl+c|
 | `ros2 run rqt_graph rqt_graph` | Opens a graphical tool showing active nodes and topic connections in the ROS2 system. |
 
 ## 3. How to Test the Nodes
